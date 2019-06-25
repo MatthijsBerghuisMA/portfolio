@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Matthijs Berghuis</title>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"></head>
 <body>
 <nav>
     <div class="nav_links">
-        <a href="http://"> < MATTHIJS /> </a>
+        <a href="/"> < MATTHIJS > </a>
     </div>    
 
     <div class="nav_rechts">
-        <a href="http://">HOME</a>
-        <a href="http://">CONTACT</a>
-        <a href="http://">NOTHING</a>
+        <a href="/">HOME</a>
+        <a href="/">CONTACT</a>
+        <a href="/">NOTHING</a>
     </div>
 </nav>
