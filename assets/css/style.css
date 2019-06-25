@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    box-shadow: 0px 3px 8px -8px #000;
+    background-color: #fafafafa;
+}
+
+a {
+    text-decoration:  none;
+    color: #000;
+}
+
+a:hover {
+    color: rgb(113, 113, 113);
+}
+
+.nav_links, .nav_rechts {
+    margin: 10px;
+}
+
+.nav_rechts a {
+    font-size: 0.8em;
+}
+
+.nav_links a{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
