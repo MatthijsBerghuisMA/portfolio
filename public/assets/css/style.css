@@ -1,14 +1,20 @@
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Nav Beginning */
 
 nav {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 50px;
     box-shadow: 0px 3px 8px -8px #000;
-    background-color: #fafafafa;
+    background-color: #fafafaf5;
+    position: fixed;
 }
 
 a {
@@ -25,34 +31,108 @@ a:hover {
 }
 
 .nav_rechts a {
-    font-size: 0.8em;
-    margin: 6px;
+    font-size: 0.7em;
+    margin: 3px;
 }
 
 .nav_links a{
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 1px;
     font-size: 0.9em;
 }
 
+/* Nav End */
+/* Intro Start */
 .wrapper {
     margin: 10px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
 .text {
+    text-align: center;
     font-size: 16pt;
     line-height: 20px;
     pointer-events: none;
     user-select: none;
+    margin-left: 10px;
 }
 
 .color {
     color: blue;
 }
 
-.test {
+/* Intro End */
+/* About Me Start */
+
+
+.about_head {
+    padding: 70px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.about_header {
+    font-family: 'raleway-bold', sans-serif;
+    font-size: 25pt;
+}
+
+.about_line {
+    width: 70px;
+    height: 4px;
+    background-color: #000;
+}
+
+
+.about_me {
+    text-align: center;
+}
+
+.img_me {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.about {
+    height: 100vh;
+    box-shadow: 0px 3px 8px -8px #000;
+}
+
+.languages {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    font-size: 10pt;
+    flex-wrap: wrap;
+    color: #ffffff;
+    font-weight: 999;
+    justify-content: center;
+}
+
+.progress_bar {
+    width: 80%;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress_bar-fill {
+    display: block;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(89, 89, 255);
+    border-radius: 3px;
+    transition: width 500ms ease-in-out;
 }
