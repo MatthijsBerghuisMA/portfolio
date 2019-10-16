@@ -5,6 +5,14 @@
         Hello, I'm <span class="color">Matthijs Berghuis</span>, <br>
         I'm a full-stack web developer
     </div>
+    <a href="#about">
+        <div class="scroll-downs">
+
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+    </a>
 </div>
 <div class="about">
     <div class="about menu_trigger" id="about">
@@ -22,8 +30,6 @@
                 <span>My hobbies are coding, working and spending time with family and friends.</span>
                 <span>I am a motivated guy with a sense of humor, who is always ready for a challenge.</span>
                 <span>My goal is to have a career as a full-stack web-developer.</span>
-        
-
             </div>
         </div>
     </div>

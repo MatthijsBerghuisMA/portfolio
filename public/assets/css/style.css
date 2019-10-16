@@ -40,7 +40,6 @@ nav {
     justify-content: space-between;
     height: 75px;
     position: absolute;
-    background-color: #fafafaf5;
 }
 
 nav svg {
@@ -198,8 +197,11 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #fafafa;
-    box-shadow: 0px 3px 8px -8px #000;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23444444' stroke-width='71.4' stroke-opacity='0.06' %3E%3Ccircle fill='%23ffffff' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f3f3f3' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ededed' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e6e6e6' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23e0e0e0' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23dadada' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23d4d4d4' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23cecece' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23c8c8c8' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23c2c2c2' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23bdbdbd' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23b7b7b7' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23b1b1b1' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23ababab' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23a5a5a5' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23a0a0a0' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%239a9a9a' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    /* background by SVGBackgrounds.com */
 }
 
 .text {
@@ -261,7 +263,60 @@ a {
     }
 }
 
+/* Mouse pointer Start */
+
+.scroll-downs {
+    position: absolute;
+    top: 70vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: black;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+/* Mouse pointer End */
 /* Intro End */
+
 /* About Me Start */
 
 .about_head {
