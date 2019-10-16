@@ -27,6 +27,7 @@
 <script type="text/javascript" src="public/assets/js/contact.js"></script>
 <script type="text/javascript" src="public/assets/js/nav.js"></script>
 <script type="text/javascript" src="public/assets/js/slider.js"></script>
+<script type="text/javascript" src="public/assets/js/darkmode.js"></script>
 </body>
 
 </html>
