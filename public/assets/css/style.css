@@ -62,7 +62,7 @@ body {
 nav {
     padding: 0 80px;
     margin-top: 40px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -215,7 +215,7 @@ a {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-
+    padding: 0px 20px;
   }
   .theme-switch {
     display: inline-block;
@@ -239,6 +239,17 @@ a {
     transition: .4s;
   }
   
+  .slider.two{
+    background-color: var(--color-switch); 
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+
   .slider:before {
     background-color: var(--bg-color);  
     bottom: 4px;
@@ -250,11 +261,11 @@ a {
     width: 26px;
   }
   
-  input:checked + .slider {
+  input:checked + .slider, .slidertwo{
     background-color: var(--color-switch); 
   }
   
-  input:checked + .slider:before {
+  input:checked + .slider:before, .slider.two:before{
     transform: translateX(26px);
   }
   
@@ -336,6 +347,10 @@ a {
         left: -20px;
         top: -250px;
         margin-left: 0px;
+    }
+
+    .theme-switch-wrapper {
+        padding: 29px;
     }
 }
 
@@ -452,6 +467,7 @@ a {
 
 .img-me {
     display: block;
+    margin: 20px;
     width: 140px;
     float: right;
 }
@@ -470,7 +486,7 @@ a {
 
 .aboutme {
     align-content: center;
-    width: 30%;
+    width: 35%;
     line-height: 30px;
 }
 
@@ -708,16 +724,14 @@ section h2 {
 }
 
 img.ButtonM {
-    width: 40%;
-    height: 40%;
-    margin: 50px 50px;
+    width: 100%;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
 img.ButtonM:hover {
-    opacity: 0.6;
+    opacity: 0.3;
     cursor: pointer;
 }
 
@@ -754,6 +768,34 @@ article {
     width: 70%;
     margin: 20px 0;
 }
+
+
+.ModaalTextHover {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px;
+}
+
+.ModaalTextHover h2 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    color: var(--color);
+    transition: .5s ease;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.ModaalTextHover:hover :not(img) {
+    opacity: 1;
+}
+
+
 @keyframes opkomen {
 
     0% {
@@ -775,7 +817,7 @@ article {
 @media screen and (max-width: 800px) {
 
     img.ButtonM {
-        width: 60%;
+        width: 100%;
     }
 
     .modaal img {
@@ -789,6 +831,14 @@ article {
 
     .modaal {
         width: 90%;
+    }
+
+    .ModaalTextHover h2 {
+        width: 50%;
+    }
+
+    .ModaalTextHover {
+        width: 100%;
     }
 }
 

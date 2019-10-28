@@ -117,50 +117,69 @@
         <div class="portfolio_header">PORTFOLIO</div>
         <div class="portfolio_line"></div>
     </div>
+
     <div class="projects">
 
-        <img src="public/assets/img/gato/GATO_mockup2.png" class="ButtonM" alt="GATO">
+
+
+        <div class="ModaalTextHover">
+            <h2>GATO</h2>
+            <img src="public/assets/img/gato/GATO_mockup2.png" class="ButtonM" alt="GATO">
+        </div>
         <section class="album Content">
             <h2>GATO</h2>
             <img src="public/assets/img/gato/GATO_mockupModaal.png" alt="GATO">
             <article>
-                <h3>This is a social media platform me and a small group had to make in the third period. We won a special contest in our school with this project.</h3>
-                <a href="http://26378.hosts2.ma-cloud.nl/bewijzenmap/periode1.1/proj/projectik/subpages/home/" target=_blank>Link to my webpage</a>
-                <a href="https://github.com/RobbeLee/Gato" target=_blank>Link to the Github page</a>
-            </article>
-        </section>
-        <img src="public/assets/img/stal/stal_mockup.png" class="ButtonM" alt="STAL">
-        <section class="album Content">
-            <h2>STAL RIJOPLEIDING</h2>
-            <img src="public/assets/img/stal/STAL_mockupModaal.png" alt="GATO">
-            <article>
-                <h3>This was a project for school/driving school. My driving school had a simple website and wanted to get a new one. So i made one for them.</h3>
-                <a href="http://26378.hosts2.ma-cloud.nl/code/public/" target=_blank>Link to the webpage</a>
-                <a href="https://github.com/263782/Stal-Rijopleiding" target=_blank>Link to the Github page</a>
-            </article>
-        </section>
-        <img src="public/assets/img/baked/baked_mockup.png" class="ButtonM" alt="STAL">
-        <section class="album Content">
-            <h2>BAKED</h2>
-            <img src="public/assets/img/baked/baked.png" alt="GATO">
-            <article>
                 <h3>WORK IN PROGRESS</h3>
-                <!-- <h3>This was a project for school/driving school. My driving school had a simple website and wanted to get a new one. So i made one for them.</h3>
+                <!-- <a href="http://26378.hosts2.ma-cloud.nl/bewijzenmap/periode1.1/proj/projectik/subpages/home/" target=_blank>Link to my webpage</a>
+                <a href="https://github.com/RobbeLee/Gato" target=_blank>Link to the Github page</a>
+            </article> -->
+        </section>
+
+
+        <div class="ModaalTextHover">
+            <h2>RGB-Guesser</h2>
+            <img src="public/assets/img/RGB-Guesser/SwiftApp-Mockup.png" class="ButtonM" alt="SWIFT APP">
+            <section class="album Content">
+                <h2>RGB-Guesser</h2>
+                <img src="public/assets/img/RGB-Guesser/SwiftApp-Mockup.png" alt="GATO">
+                <article>
+                    <h3>WORK IN PROGRESS</h3>
+                    <!-- <a href="http://26378.hosts2.ma-cloud.nl/code/public/" target=_blank>Link to the webpage</a>
+                <a href="https://github.com/263782/Stal-Rijopleiding" target=_blank>Link to the Github page</a>
+            </article> -->
+            </section>
+        </div>
+
+        <div class="ModaalTextHover">
+            <h2>Diff Logboek</h2>
+            <img src="public/assets/img/baked/baked_mockup.png" class="ButtonM" alt="BAKED">
+            <section class="album Content">
+                <h2>BAKED</h2>
+                <img src="public/assets/img/baked/baked.png" alt="GATO">
+                <article>
+                    <h3>WORK IN PROGRESS</h3>
+                    <!-- <h3>This was a project for school/driving school. My driving school had a simple website and wanted to get a new one. So i made one for them.</h3>
                         <a href="http://26378.hosts2.ma-cloud.nl/code/public/" target=_blank>Link to the webpage</a>
                         <a href="https://github.com/263782/Stal-Rijopleiding" target=_blank>Link to the Github page</a> -->
-            </article>
-        </section>
-        <img src="public/assets/img/InVisual/Invisual_mockup.png" class="ButtonM" alt="STAL">
-        <section class="album Content">
+                </article>
+            </section>
+        </div>
+
+        <div class="ModaalTextHover">
             <h2>Invisual</h2>
-            <img src="public/assets/img/InVisual/Invisual.png" alt="GATO">
-            <article>
-                <h3>WORK IN PROGRESS</h3>
-                <h3></h3>
-                <a href="https://invisualdesign.nl" target=_blank>Link to the webpage</a>
+            <img src="public/assets/img/InVisual/Invisual_mockup.png" class="ButtonM" alt="INVISUAL">
+            <section class="album Content">
+                <h2>Invisual</h2>
+                <img src="public/assets/img/InVisual/Invisual.png" alt="GATO">
+                <article>
+                    <h3>WORK IN PROGRESS</h3>
+                    <!-- <a href="https://invisualdesign.nl" target=_blank>Link to the webpage</a>
                 <a href="" target=_blank>Link to the Github page</a>
-            </article>
-        </section>
+            </article> -->
+            </section>
+        </div>
+
     </div>
     <div class="contact menu_trigger" id="contact">
         <div class="contact_head">
@@ -181,7 +200,7 @@
                     <div class="input_underline"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" name="email" id="email" class="input" required>
+                    <input type="email" name="email" id="email" class="input" required>
                     <label class="input_label" for="email">Email *</label>
                     <div class="input_underline"></div>
                 </div>
