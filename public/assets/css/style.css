@@ -162,6 +162,9 @@ a {
     text-decoration: none;
 }
 
+.nav-link.blue {
+    color: var(--primary-color);
+}
 .nav-link::after {
     content: '';
     position: absolute;
@@ -320,6 +323,7 @@ a {
     border: none;
     position: absolute;
     z-index: -1;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -344,8 +348,7 @@ a {
     }
 
     .test {
-        left: -20px;
-        top: -250px;
+        left: -61px;
         margin-left: 0px;
     }
 
@@ -645,6 +648,7 @@ a {
     display: flex;
     font-size: 1em;
     flex-direction: column;
+    text-align: center;
     flex-wrap: wrap;
     color: var(--color);
     font-weight: 999;
@@ -652,10 +656,13 @@ a {
 }
 
 .codinglang {
-    margin-bottom: 100px;
-    width: 10%;
+    padding: 100px 250px;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
 }
 
 .codinglang span {
@@ -666,6 +673,13 @@ a {
     flex-direction: column;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .codinglang {
+        flex-direction: column;
+        padding: 0px;
+    }
+}
 /* Coding Languages End */
 
 
@@ -707,24 +721,33 @@ a {
 }
 
 section a {
+    border-radius: 12px;
+    padding: 13px;
+    border: 1px solid;
     color: #fff;
     display: flex;
+    width: 300px;
+    margin: auto;
     flex-direction: column;
     margin-top: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 section a:hover {
-    color: blue;
+    color: black;
+    background-color: white;
 }
 
 section h2 {
-    margin-top: -75px;
     font-size: 3em;
     color: #fafafa;
 }
 
 img.ButtonM {
     width: 100%;
+    height: auto;
+    max-width: 700px;
+    max-height: 600px;
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
@@ -737,11 +760,25 @@ img.ButtonM:hover {
 
 article {
     margin: 0px auto;
-    width: 70%;
 }
 
 .modaal-knop {
     cursor: pointer;
+}
+
+.modal_textInfo {
+    float: right;
+    margin: 20px 0px;
+}
+
+.modalcontent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 69px;
+}
+
+section.album.Content {
+    height: 75vh;
 }
 
 .m-Background {
@@ -765,6 +802,7 @@ article {
 }
 
 .modaal img {
+    float: left;
     width: 70%;
     margin: 20px 0;
 }
@@ -784,7 +822,7 @@ article {
     opacity: 0;
     top: 45%;
     text-align: center;
-    width: 100%;
+    width: 90%;
     color: var(--color);
     transition: .5s ease;
     font-weight: 900;
@@ -814,10 +852,11 @@ article {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
     img.ButtonM {
         width: 100%;
+        height: 100%;
     }
 
     .modaal img {
@@ -830,18 +869,33 @@ article {
     }
 
     .modaal {
-        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
 
     .ModaalTextHover h2 {
         width: 50%;
+        height: auto;
     }
 
     .ModaalTextHover {
         width: 100%;
     }
+
+    .modalcontent {
+      display: inherit;
+     padding-left: 0px;
+    }
 }
 
+
+
+@media screen and (max-width: 500px) {
+
+    img.ButtonM {
+        max-height: 300px;
+    }
+}
 /* Modeel Venster End */
 
 /* Portfolio End */
@@ -965,6 +1019,10 @@ article {
 
 @media screen and (max-width: 800px) {
 
+    .contact_header {
+        text-align: center;
+    }
+
     .contact {
         height: 100%;
     }
@@ -1005,6 +1063,10 @@ article {
         margin-top: 75px;
     }
 
+    .ModaalTextHover h2 {
+        display: none;
+    }
+
 }
 
 /* Input End */
@@ -1012,6 +1074,7 @@ article {
 /* Contact End */
 
 /* Footer Start */
+
 footer {
     width: 100%;
     height: 100%;
@@ -1054,7 +1117,9 @@ footer {
 
 .footer_content {
     display: flex;
+    text-align: center;
     flex-direction: column;
+    margin: 50px 0px;
 }
 
 .footer_items {
@@ -1063,7 +1128,6 @@ footer {
     margin-right: auto;
     margin-bottom: 100px;
 }
-
 
 .copyright {
     justify-content: center;
@@ -1074,6 +1138,7 @@ footer {
 
     .socials {
         flex-direction: column;
+        padding-top: 0px;
     }
 
     .smedia_header {
@@ -1082,9 +1147,21 @@ footer {
 
     .social_list {
         margin-bottom: 40px;
-        width: 25%;
     }
 
 }
 
 /* Footer End */
+
+.header_langLine {
+    width: 50px;
+    height: 4px;
+    background-color: var(--color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.backend, .frontend {
+    margin-bottom: 50px;
+}

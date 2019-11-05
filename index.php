@@ -24,17 +24,18 @@
             <span class="subspan">me</span>
             <div class="about_line aboutl"></div>
             <div class="aboutme">
-                <img class="img-me" src="public/assets/img/other/ik.jpg" alt="">
+                <img class="img-me" src="public/assets/img/other/ik.jpeg" alt="">
                 <span class="who">Who am I?</span>
                 <span>My name is Matthijs Berghuis and I am a 17-year-old second year mediadeveloper at Mediacollege Amsterdam.</span>
-                <span>My hobbies are coding, working and spending time with family and friends.</span>
+                <span>My hobbies are coding, going to the gym, work and spending time with family and friends.</span>
                 <span>I am a motivated guy with a sense of humor, who is always ready for a challenge.</span>
+                <span>When i first came to the Mediacollege I did not have any idea how to code, but I have put all my work, dedication and time in to coding to be the hardworking, fast and clean working developer that I am today.</span>
                 <span>My goal is to have a career as a full-stack web-developer.</span>
             </div>
         </div>
     </div>
     <div class="otherinfo">
-        <span class="subspan">professions</span>
+        <span class="subspan">SKills</span>
         <div class="about_line aboutl"></div>
         <div class="Professions">
 
@@ -97,18 +98,32 @@
         <div class="about_line aboutl"></div>
         <div class="codinglang">
 
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>SASS</span>
-            <span>SCSS</span>
-            <span>JS</span>
-            <span>PHP</span>
-            <span>SQL</span>
-            <span>SWIFT</span>
-            <span>JAVA</span>
+            <div class="frontend">
+                <span>FRONTEND</span>
+                <div class="header_langLine"></div>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SASS</span>
+                <span>SCSS</span>
+                <span>JS</span>
+                <span>SWIFT</span>
+            </div>
+            <div class="backend">
+                <span>BACKEND</span>
+                <div class="header_langLine"></div>
+                <span>PHP</span>
+                <span>SQL</span>
+                <span>SWIFT</span>
+                <span>JAVA</span>
+            </div>
+            <div class="frameworks">
+                <span>FRAMEWORKS</span>
+                <div class="header_langLine"></div>
+                <span>AJAX</span>
+                <span>LARAVEL</span>
+            </div>
 
         </div>
-
     </div>
 </div>
 </div>
@@ -130,10 +145,12 @@
             <h2>GATO</h2>
             <img src="public/assets/img/gato/GATO_mockupModaal.png" alt="GATO">
             <article>
-                <h3>WORK IN PROGRESS</h3>
-                <!-- <a href="http://26378.hosts2.ma-cloud.nl/bewijzenmap/periode1.1/proj/projectik/subpages/home/" target=_blank>Link to my webpage</a>
-                <a href="https://github.com/RobbeLee/Gato" target=_blank>Link to the Github page</a>
-            </article> -->
+                <div class="modalcontent">
+                    <span class="modal_textInfo">This was one of the first big projects of the year. Me, Robbe and Mike created our own social media platform with PHP, HTML, CSS, SQL and JS. I have learned a lot of this project and this is the one where I am most proud of, because I learned a lot of backend with this project.</span>
+                    <a target="_blank" href="https://github.com/RobbeLee/Gato">Link to the Github page</a>
+                    <a target="_blank" href="http://matthijsberghuis.com/gato">Link to the web page</a>
+                </div>
+            </article>
         </section>
 
 
@@ -144,10 +161,10 @@
                 <h2>RGB-Guesser</h2>
                 <img src="public/assets/img/RGB-Guesser/SwiftApp-Mockup.png" alt="GATO">
                 <article>
-                    <h3>WORK IN PROGRESS</h3>
-                    <!-- <a href="http://26378.hosts2.ma-cloud.nl/code/public/" target=_blank>Link to the webpage</a>
-                <a href="https://github.com/263782/Stal-Rijopleiding" target=_blank>Link to the Github page</a>
-            </article> -->
+                    <div class="modalcontent">
+                        <span class="modal_textInfo">This is the first mobile app I have ever made. I made this app with swift. I am very proud of this project because I want to study further with App development.</span>
+                        <a target="_blank" href="https://github.com/matthijsdevelopment/RGB-Color-Guesser">Link to the Github page</a>
+                    </div>
             </section>
         </div>
 
@@ -155,13 +172,14 @@
             <h2>Diff Logboek</h2>
             <img src="public/assets/img/baked/baked_mockup.png" class="ButtonM" alt="BAKED">
             <section class="album Content">
-                <h2>BAKED</h2>
+                <h2>Diff Logboek</h2>
                 <img src="public/assets/img/baked/baked.png" alt="GATO">
                 <article>
-                    <h3>WORK IN PROGRESS</h3>
-                    <!-- <h3>This was a project for school/driving school. My driving school had a simple website and wanted to get a new one. So i made one for them.</h3>
-                        <a href="http://26378.hosts2.ma-cloud.nl/code/public/" target=_blank>Link to the webpage</a>
-                        <a href="https://github.com/263782/Stal-Rijopleiding" target=_blank>Link to the Github page</a> -->
+                    <div class="modalcontent">
+                        <span class="modal_textInfo">This is the first CMS (content Managing System) I've ever created. I made this while following a tutorial. The idea behind this project is for one of our classes Differentatie where we have to follow certain classes.</span>
+                        <a href="https://github.com/matthijsdevelopment/CMS_Blogpage" target=_blank>Link to the Github page</a>
+                        <a href="https://matthijsberghuis.com/logboek" target=_blank>Link to the webpage</a>
+                    </div>
                 </article>
             </section>
         </div>
@@ -173,17 +191,49 @@
                 <h2>Invisual</h2>
                 <img src="public/assets/img/InVisual/Invisual.png" alt="GATO">
                 <article>
-                    <h3>WORK IN PROGRESS</h3>
-                    <!-- <a href="https://invisualdesign.nl" target=_blank>Link to the webpage</a>
-                <a href="" target=_blank>Link to the Github page</a>
-            </article> -->
+                    <div class="modalcontent">
+                        <span class="modal_textInfo">This is a big project where me and a couple of other students of our school had to start our own business. I created all the frontend of the webpage and Wiebe created all the backend. I learned a lot about working togethet as a group and creating webpages as how to designers wants it to be.</span>
+                        <a href="https://github.com/MatthijsBerghuisMA/Invisual" target=_blank>Link to the Github page</a>
+                        <a href="http://invisualdesign.nl/" target=_blank>Link to the webpage</a>
+                    </div>
+                </article>
             </section>
         </div>
 
+        <div class="ModaalTextHover">
+            <h2>Stalrijopleiding</h2>
+            <img src="public/assets/img/stal/stal_mockup.png" class="ButtonM" alt="INVISUAL">
+            <section class="album Content">
+                <h2>Stalrijopleiding</h2>
+                <img src="public/assets/img/stal/STAL_mockupModaal.png" alt="GATO">
+                <article>
+                    <div class="modalcontent">
+                        <span class="modal_textInfo">This is the second big project we had to make in the first year. We had to choose our own subject for our pages and I chose for my driving school. Eventualy they did not want to use my webpage bacause the owners where not used to change code with a code edditor. This website is currently offline.</span>
+                        <a href="https://github.com/MatthijsBerghuisMA/Stal-Rijopleiding" target=_blank>Link to the Github page</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="ModaalTextHover">
+            <h2>80's Quiz</h2>
+            <img src="public/assets/img/quiz/quizModaal_mockup.png" class="ButtonM" alt="INVISUAL">
+            <section class="album Content">
+                <h2>80's Quiz</h2>
+                <img src="public/assets/img/quiz/quizModaal.png" alt="GATO">
+                <article>
+                    <div class="modalcontent">
+                        <span class="modal_textInfo">This is the second project where I had to work together with another web-developer. I chose to work with Giovanni. We had a great time working together and created a small quiz for an 80's themed hackaton with HTML, JS, and CSS.</span>
+                        <a href="https://github.com/MatthijsBerghuisMA/quiz" target=_blank>Link to the Github page</a>
+                        <a href="http://26378.hosts2.ma-cloud.nl/quiz/quiz.php" target=_blank>Link to the webpage</a>
+                    </div>
+                </article>
+            </section>
+        </div>
     </div>
     <div class="contact menu_trigger" id="contact">
         <div class="contact_head">
-            <div class="contact_header">CONTACT</div>
+            <div class="contact_header">READY TO HAVE A TALK?</div>
             <div class="contact_line"></div>
         </div>
         <div class="contact_inputs">

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="My name is Matthijs Berghuis, I am a 17-year-old full-stack webdeveloper. This is the portfolio i've created. Come take a look!">
+    <meta name="description" content="My name is Matthijs Berghuis, I am a 17-year-old full-stack webdeveloper. This is the portfolio i have created. Come take a look!">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript,PHP,Full-stack,Mediacollege,Assendelft,Student,Developer,Dev,Web-dev">
     <meta name="author" s content="Matthijs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@
         <div class="nav_rechts template__nav-item ">
             <a class="nav-link" href="#about">ABOUT</a>
             <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-            <a class="nav-link" href="#contact">CONTACT</a>
+            <a class="nav-link blue" href="#contact">CONTACT</a>
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -52,7 +52,7 @@
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
+                    <div class="slider two round"></div>
                 </label>
             </div>
                 <a class="nav-link" href="#about">ABOUT</a>
