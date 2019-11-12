@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav_links template__nav-item">
+    <header>
+    <nav class="nav">
+        <div class="nav_links">
             <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1899.35 996.25">
                 <defs>
                 </defs>
@@ -29,7 +30,7 @@
             </svg>
         </div>
 
-        <div class="nav_rechts template__nav-item ">
+        <div class="nav_rechts template__nav-item">
             <a class="nav-link" href="#about">ABOUT</a>
             <a class="nav-link" href="#portfolio">PORTFOLIO</a>
             <a class="nav-link blue" href="#contact">CONTACT</a>
@@ -61,3 +62,4 @@
             </div>
         </div>
     </nav>
+</header>

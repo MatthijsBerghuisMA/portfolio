@@ -1,5 +1,9 @@
 <?php include 'private/includes/nav.php'; ?>
 
+<div class="top">
+    <span><a href="#home">UP</a></span>
+</div>
+
 <div class="intro menu_trigger" id="home">
     <div class="text">
         Hello, I'm <span class="color">Matthijs Berghuis</span>, <br>
@@ -14,8 +18,8 @@
         </div>
     </a>
 </div>
-<div class="about">
-    <div class="about menu_trigger" id="about">
+<div class="about menu_trigger"  id="about">
+    <div class="about">
         <div class="about_head">
             <div class="about_header">ABOUT</div>
             <div class="about_line"></div>
@@ -115,11 +119,11 @@
                 <span>SQL</span>
                 <span>SWIFT</span>
                 <span>JAVA</span>
+                <span>AJAX</span>
             </div>
             <div class="frameworks">
                 <span>FRAMEWORKS</span>
                 <div class="header_langLine"></div>
-                <span>AJAX</span>
                 <span>LARAVEL</span>
             </div>
 
@@ -264,4 +268,5 @@
         </div>
     </div>
 </div>
+
 <?php include 'private/includes/footer.php'; ?>

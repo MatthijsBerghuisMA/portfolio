@@ -66,7 +66,7 @@ nav {
     --box-shadow: none;
     padding: 40px 80px;
     width: 100%;
-    z-index: 999;
+    z-index: 4;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,6 +179,7 @@ a {
 .nav-link.blue {
     color: var(--primary-color);
 }
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -301,14 +302,19 @@ a {
     bottom: 50px;
     right: 100;
     right: 50px;
-    background-color: #ffffff73;
+    background-color: #cecece9c;
     font-size: 1.5em;
     padding: 12px;
     border-radius: 10px;
     z-index: 3;
     font-weight: 900;
+    display: none;
+    transition: 0.2s ease-in-out;
 }
 
+.show {
+    display: unset;
+}
 /* Nav End */
 /* Intro Start */
 
@@ -349,7 +355,7 @@ a {
     background-color: transparent;
     border: none;
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     cursor: pointer;
 }
 
@@ -758,6 +764,7 @@ section a {
     color: #fff;
     display: flex;
     width: 300px;
+    z-index: 3;
     margin: auto;
     flex-direction: column;
     margin-top: 15px;
@@ -780,6 +787,7 @@ img.ButtonM {
     max-width: 700px;
     max-height: 600px;
     opacity: 1;
+    z-index: 2;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -818,6 +826,7 @@ section.album.Content {
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 5;
     background-color: rgba(0, 0, 0, 0.84);
     display: grid;
     justify-items: center;
@@ -1204,7 +1213,10 @@ footer {
     right:0;
   }
 
-
-.active {
-    color: rgb(255, 0, 0);
+  .actief {
+     opacity: 0.8;
+  }
+  
+  .nav-link.actief::after {
+    transform: scale(1);
 }
