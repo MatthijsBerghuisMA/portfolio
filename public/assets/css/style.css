@@ -42,6 +42,7 @@ body {
     --color-switch: black; 
     --heading-color: #000000;
     --background-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23444444' stroke-width='71.4' stroke-opacity='0.06' %3E%3Ccircle fill='%23ffffff' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f9f9f9' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f3f3f3' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ededed' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e6e6e6' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23e0e0e0' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23dadada' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23d4d4d4' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23cecece' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23c8c8c8' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23c2c2c2' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23bdbdbd' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23b7b7b7' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23b1b1b1' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23ababab' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23a5a5a5' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23a0a0a0' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%239a9a9a' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    --nav-scroll: #f7f7f7;
 }
 
 [data-theme="dark"] {
@@ -53,22 +54,35 @@ body {
     --bg-color: #0f0f0f;
     --heading-color: #afafaf;
     --background-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%235d5d5d' stroke-width='64.9' stroke-opacity='0.11' %3E%3Ccircle fill='%23000000' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23020202' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23040404' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23070707' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23090909' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230b0b0b' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%230d0d0d' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230f0f0f' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23111111' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23141414' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23161616' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23181818' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%231a1a1a' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%231c1c1c' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%231e1e1e' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23212121' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23232323' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23252525' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    
+    --nav-scroll: #121212;
 }
 
 /* Nav Beginning */
 
 
 nav {
-    padding: 0 80px;
-    margin-top: 40px;
+    --text-inverse: #333;
+    --background: transparent;
+    --box-shadow: none;
+    padding: 40px 80px;
     width: 100%;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 75px;
-    position: absolute;
+    color: black;
+    background: var(--background);
+    position: fixed;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s ease-in-out;
 }
+
+.nav-scrolled {
+    --background: var(--nav-scroll);
+    --box-shadow: 0px 3px 8px -8px #000;
+}
+
 
 nav svg {
     width: 100px;
@@ -282,6 +296,19 @@ a {
 
 /* Dark Mode Slider End */
 
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 100;
+    right: 50px;
+    background-color: #ffffff73;
+    font-size: 1.5em;
+    padding: 12px;
+    border-radius: 10px;
+    z-index: 3;
+    font-weight: 900;
+}
+
 /* Nav End */
 /* Intro Start */
 
@@ -471,7 +498,7 @@ a {
 .img-me {
     display: block;
     margin: 20px;
-    width: 140px;
+    width: 200px;
     float: right;
 }
 
@@ -588,6 +615,10 @@ a {
     background-color: #000000;
 }
 
+.active {
+    color: red;
+}
+
 .profession {
     font-size: 1.3em;
     color: var(--color);
@@ -622,7 +653,7 @@ a {
 
 /* Slider End */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
 
     .about {
         height: 100%;
@@ -1164,4 +1195,16 @@ footer {
 
 .backend, .frontend {
     margin-bottom: 50px;
+}
+
+.fixed {
+    position:fixed; 
+    top:0;
+    left:0;
+    right:0;
+  }
+
+
+.active {
+    color: rgb(255, 0, 0);
 }
